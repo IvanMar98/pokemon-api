@@ -1,0 +1,28 @@
+@use 'variables' as v;
+
+.Btn__box{
+    position: relative;
+}
+.Btn{
+    background-color: v.$color1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+}
+
+.Btn__shadow{
+    width: 60px;
+    height: 60px;
+    background-color: v.$color2;
+    position: absolute;
+    top: 5px;
+    border-radius: 50%;
+    z-index: -1;
+}
+.Btn:active{
+    transform: translateY(4px);
+}
