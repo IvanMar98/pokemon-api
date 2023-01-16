@@ -4,6 +4,7 @@ import './App.css';
 import './sass/App.scss';
 import { TiArrowLeftOutline } from "react-icons/ti";
 import { TiArrowRightOutline } from "react-icons/ti";
+import Card from './components/Card';
 
 
 function App() {
@@ -33,15 +34,18 @@ function App() {
 
   return (
     <div className='App'>
+      <div className='Cards__container'>
+        <Card />
+      </div>
       <div className='Buttons__container'>
-      <Button 
-        icon = {<TiArrowLeftOutline />}
-        handleClick ={backPkemon} 
-      />
-      <Button 
-        icon = {<TiArrowRightOutline />} 
-        handleClick ={nextPokemon} 
-      />
+        <Button 
+          icon = {<TiArrowLeftOutline />}
+          handleClick ={backPkemon} 
+        />
+        <Button 
+          icon = {<TiArrowRightOutline />} 
+          handleClick ={nextPokemon} 
+        />
       </div>
       <div className='Counter'>
         {pokemonNumber} - {pokemonName}
