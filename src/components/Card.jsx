@@ -1,12 +1,12 @@
 import React from 'react';
 import '../sass/Card.scss';
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div className='Card'>
-        <p className='Card__name'>David</p>
+        <p className='Card__name'>{props.name}</p>
         <div className='Card__circle'></div>
-        <img className='Card__img' src="" alt="pokemon img" />
+        <img className='Card__img' src= {props.img} alt="pokemon img" />
     </div>
   )
 }
